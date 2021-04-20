@@ -10,7 +10,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ROUTER
+app.use(express.static('public'));
+require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
+
 
 // LISTENER
 app.listen(PORT, () => {
