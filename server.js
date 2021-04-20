@@ -10,9 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ROUTER
-app.get('/', (req, res) => {
-    res.send('Welcome to the Note Taker.');
-});
+require('./routes/htmlRoutes')(app);
 
 // LISTENER
 app.listen(PORT, () => {
