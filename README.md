@@ -43,12 +43,16 @@ You haven’t learned how to handle DELETE requests, but this application has th
 * `DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 
 ### TODO
-- Set up extremely basic server
-- Deploy to Heroku
+- Set up on Heroku
 - Write HTML Routes
-- Write API Routes
-- What other connections between server and front-end are needed?
-- Try bonus
+- Write API Routes to get db.json
+
+- Write API Route to post a new note; use Insomnia to test
+
+- Review provided fetch requests in index.js
+- Other tasks (TBD)
+
+- Try DELETE bonus
 
 ### Questions
 - Does it matter which port I choose?
