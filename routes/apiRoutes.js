@@ -16,4 +16,12 @@ module.exports = (app) => {
         res.json(note);
     });
 
+    app.delete('/api/notes/:id', (req, res) => {
+        console.log('Note deleted');
+        // receive a query parameter containing the id of a note to delete 
+        // Read all notes from the `db.json` file
+        // remove the note with the given `id` property
+        // Rewrite the notes to the `db.json` file
+    });
+
 };
